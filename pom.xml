@@ -12,7 +12,7 @@
 	<groupId>org.test</groupId>
 	<artifactId>spring-cloud-square-retrofit-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>retrofit-web</name>
+	<name>spring-cloud-square-retrofit-web</name>
 	<packaging>pom</packaging>
 	<description>Demo project for Spring Cloud Square Retrofit Web</description>
 	<properties>

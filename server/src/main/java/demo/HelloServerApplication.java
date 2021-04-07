@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,7 +25,7 @@ public class HelloServerApplication {
 		SpringApplication.run(HelloServerApplication.class, args);
 	}
 
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String hello() {
 		List<ServiceInstance> instances = client.getInstances("HelloServer");
 		ServiceInstance selectedInstance = instances

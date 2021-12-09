@@ -16,7 +16,6 @@
 	<description>Demo server for Spring Cloud Square Retrofit Web</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2020.0.2</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>

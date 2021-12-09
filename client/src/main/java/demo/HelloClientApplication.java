@@ -31,12 +31,6 @@ public class HelloClientApplication {
 		SpringApplication.run(HelloClientApplication.class, args);
 	}
 
-	@Bean
-	@LoadBalanced
-	public OkHttpClient.Builder builder() {
-		return new OkHttpClient.Builder();
-	}
-
 	@GetMapping("/")
 	public String hello() throws IOException {
 		return client.hello().execute().body();
